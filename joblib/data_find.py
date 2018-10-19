@@ -1,17 +1,11 @@
 #!/home/cmcneile/anaconda3/bin/python
 
+#
+# 
+#
+
 import os
 import re
-
-
-##/home/cmcneile/configs/hisq/l1648f211b580m013m065m838a-coul-v5/l1648f211b580m013m065m838a-coul-v5.4195
-
-gdir = '/home/cmcneile/configs/hisq/l1648f211b580m013m065m838a-coul-v5' 
-tag = 'l1648f211b580m013m065m838a-coul-v5.'
-
-
-
-
 
 def get_config_list(tag, gdir) :
 
@@ -25,8 +19,4 @@ def get_config_list(tag, gdir) :
     slist = sorted(clist)
     return slist
 
-
-##cfg_list = get_config_list(tag, gdir) 
-##for cfg in cfg_list :
-##   print(cfg)
 

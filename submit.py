@@ -1,6 +1,10 @@
 #!/home/cmcneile/anaconda3/bin/python
+#
+#  Top level job submssion script
+#  
+#
 
-
+# The number oj jobs to submit
 nojob = 5 
 
 
@@ -23,8 +27,7 @@ import subprocess
 
 
 
-###import data_find from joblib
-##import joblib
+# my library of job submission helper functions
 sys.path.append('./joblib')
 import data_find
 import setup_job

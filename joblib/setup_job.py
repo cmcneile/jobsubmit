@@ -3,13 +3,15 @@ import os
 
 
 def update_file(filename_in,filename_out, cfg):
+  """
+    Replace CFGX in the file with the sweep number.
+  """
 
   print ("Loading template  " , filename_in)
   f = open(filename_in, 'r')
   ff = open(filename_out,'w') 
  
   for line in f:
-    
     ll  = line.rstrip('\n')
     lll = ll.replace('CFGX', cfg)
     ff.write(lll + '\n')
